@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: erms-system
+    env: docker
+    plan: free
+    region: singapore
+    envVars:
+      - key: DB_HOST
+        value: your_database_host_here
+      - key: DB_USER
+        value: your_database_user_here
+      - key: DB_PASSWORD
+        value: your_database_password_here
+      - key: DB_NAME
+        value: your_database_name_here
